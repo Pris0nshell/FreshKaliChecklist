@@ -8,5 +8,3 @@ cd into pimpmykali -> bash pimpmykali.sh ->N
 
 sudo timedatectl set-timezone Africa/Johannesburg 
 
-apt-get install  bloodhound
-
