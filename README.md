@@ -8,3 +8,4 @@ cd into pimpmykali -> bash pimpmykali.sh ->N
 
 sudo timedatectl set-timezone Africa/Johannesburg 
 
+pipx install --force git+https://github.com/SecureAuthCorp/impacket.git
