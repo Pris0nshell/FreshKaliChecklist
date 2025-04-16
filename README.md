@@ -16,4 +16,4 @@ otherwise try:
 pipx install --force git+https://github.com/SecureAuthCorp/impacket.git
 
 apt update
-apt update -Y
+apt update -y
