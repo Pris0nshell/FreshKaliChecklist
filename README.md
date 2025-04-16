@@ -1,0 +1,12 @@
+# FreshKaliChecklist
+Checklist for commands when installing a fresh Kali instance
+
+echo "riaan ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/riaan
+
+git clone https://github.com/Dewalt-arch/pimpmykali.git 
+cd into pimpmykali -> bash pimpmykali.sh ->N
+
+sudo timedatectl set-timezone Africa/Johannesburg 
+
+apt-get install  bloodhound
+
