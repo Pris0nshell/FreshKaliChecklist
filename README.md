@@ -19,3 +19,5 @@ pipx install --force git+https://github.com/SecureAuthCorp/impacket.git
 
 apt update
 apt update -y
+
+git clon https://github.com/dirkjanm/mitm6.git
