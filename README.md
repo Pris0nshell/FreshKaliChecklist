@@ -21,3 +21,5 @@ apt update
 apt update -y
 
 git clon https://github.com/dirkjanm/mitm6.git
+
+echo "kali ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/kali
