@@ -3,7 +3,7 @@ Checklist for commands when installing a fresh Kali instance
 
 echo "riaan ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/riaan
 
-Set CLI Window transparancy to 0 %
+xfconf-query -c xfwm4 -p /general/use_compositing -s false
 
 git clone https://github.com/Dewalt-arch/pimpmykali.git 
 cd into pimpmykali -> bash pimpmykali.sh ->N
