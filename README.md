@@ -1,25 +1,40 @@
-# FreshKaliChecklist
-Checklist for commands when installing a fresh Kali instance
+This started as a checklist for config and apps to do after a fresh kali vm. However, this has now morphed into a bash file which automates the process.
 
-echo "riaan ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/riaan
+**The following configuration is applied:**
+South Africa Time Zone
+Removed CLI window transparancy
+Remove CLI password prompt (login password still remains)
 
-xfconf-query -c xfwm4 -p /general/use_compositing -s false
+**The following applications are installed/downloaded**
+Neo4j
+Bloodhound
+Terminator
+nc64.exe
+MitM6
+Impacket
+Airgeddon
+Mimikatz.exe
+Rubeus.exe
+ReverseShell.php
+gettgtpkinit.py
+getnthash.py
+gets4uticket.py
+pywhisker.py
+targetedKerberoast.py
 
-git clone https://github.com/Dewalt-arch/pimpmykali.git 
-cd into pimpmykali -> bash pimpmykali.sh ->N
-
-sudo timedatectl set-timezone Africa/Johannesburg 
 
 
-forked repo
-pipx install --force git+https://github.com/Pris0nshell/impacket.git
+To Be Added:
+WinPeas
+LinPeas
+ADPeas
 
-otherwise try:
-pipx install --force git+https://github.com/SecureAuthCorp/impacket.git
 
-apt update
-apt update -y
 
-git clon https://github.com/dirkjanm/mitm6.git
 
-echo "kali ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/kali
+
+
+
+
+
+
