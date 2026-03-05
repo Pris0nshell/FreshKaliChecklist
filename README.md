@@ -31,7 +31,7 @@ ADPeas
 
 To run this - git clone the repo, then run
 ```
-bash KTO checklist.sh
+bash KTO\ checklist.sh
 ```
 
 
