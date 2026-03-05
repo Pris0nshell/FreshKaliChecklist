@@ -24,14 +24,15 @@ getnthash.py
 gets4uticket.py
 pywhisker.py
 targetedKerberoast.py
-```
-
-
-To Be Added:
 WinPeas
 LinPeas
 ADPeas
+```
 
+To run this - git clone the repo, then run
+```
+bash KTO chechlist.sh
+```
 
 
 
