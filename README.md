@@ -2,7 +2,7 @@ This started as a checklist for config and apps to do after a fresh kali vm. How
 
 **The following configuration is applied:**
 ```
-South Africa Time Zone
+GMT+2 Time Zone
 Removed CLI window transparancy
 Remove CLI password prompt (login password still remains)
 ```
