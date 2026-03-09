@@ -27,6 +27,7 @@ targetedKerberoast.py
 WinPeas
 LinPeas
 ADPeas
+Nessus
 ```
 
 To run this - git clone the repo, then run
