@@ -18,7 +18,10 @@ wget https://github.com/SpecterOps/BloodHound-Legacy/releases/download/v4.3.1/Bl
 unzip BloodHound-linux-x64.zip
 git clone https://github.com/61106960/adPEAS.git
 git clone https://github.com/peass-ng/PEASS-ng.git
-sudo apt install neo4j
+git clone https://github.com/Pris0nshell/WordlistGenerator.git
+git clone https://github.com/Pris0nshell/FTPAnonChecker.git
+git clone https://github.com/danielmiessler/SecLists.git
+sudo apt install https://github.com/Pris0nshell/FTPAnonChecker.git
 sudo apt install -y terminator
 git clone https://github.com/dirkjanm/mitm6.git
 wget https://github.com/int0x33/nc.exe/raw/refs/heads/master/nc64.exe
