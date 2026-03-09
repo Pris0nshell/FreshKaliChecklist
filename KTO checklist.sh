@@ -11,6 +11,9 @@ sudo timedatectl set-timezone Africa/Johannesburg
 mkdir /home/kali/Desktop/Tools/
 chmod 777 /home/kali/Desktop/Tools/
 cd /home/kali/Desktop/Tools/
+curl -L -o nessus.deb \
+"https://www.tenable.com/downloads/api/v2/pages/nessus/files/Nessus-latest-debian10_amd64.deb"
+sudo dpkg -i nessus.deb
 git clone https://github.com/Pris0nshell/airgeddon.git
 wget https://github.com/SpecterOps/BloodHound-Legacy/releases/download/v4.3.1/BloodHound-linux-x64.zip
 unzip BloodHound-linux-x64.zip
