@@ -28,6 +28,8 @@ WinPeas
 LinPeas
 ADPeas
 Nessus
+FTPAnonChecker
+WordlistGenerator
 ```
 
 To run this - git clone the repo, then run
