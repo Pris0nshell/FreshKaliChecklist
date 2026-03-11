@@ -37,6 +37,9 @@ wget https://github.com/ParrotSec/mimikatz/blob/master/x64/mimikatz.exe
 wget https://raw.githubusercontent.com/ivan-sincek/php-reverse-shell/refs/heads/master/src/reverse/php_reverse_shell.php
 cd /home/kali/Desktop/Tools/BloodHound-linux-x64/
 ./BloodHound --no-sandbox
+pkill BloodHound
+cd ..
+git clone https://github.com/Pris0nshell/BloodhoundCustomQueries.git
 cp /home/kali/Desktop/Tools/BloodhoundCustomQueries/customqueries.json /home/kali/.config/bloodhound/customqueries.json
 cd ~/.local/bin
 wget https://raw.githubusercontent.com/dirkjanm/PKINITtools/refs/heads/master/gettgtpkinit.py
