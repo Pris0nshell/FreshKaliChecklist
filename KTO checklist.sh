@@ -36,8 +36,7 @@ wget https://github.com/r3motecontrol/Ghostpack-CompiledBinaries/raw/refs/heads/
 wget https://github.com/ParrotSec/mimikatz/blob/master/x64/mimikatz.exe
 wget https://raw.githubusercontent.com/ivan-sincek/php-reverse-shell/refs/heads/master/src/reverse/php_reverse_shell.php
 cd /home/kali/Desktop/Tools/BloodHound-linux-x64/
-./BloodHound --no-sandbox
-pkill BloodHound
+timeout 10 ./BloodHound --no-sandbox
 cd ..
 cp /home/kali/Desktop/Tools/BloodhoundCustomQueries/customqueries.json /home/kali/.config/bloodhound/customqueries.json
 cd ~/.local/bin
