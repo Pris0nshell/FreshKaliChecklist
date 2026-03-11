@@ -5,6 +5,7 @@ This started as a checklist for config and apps to do after a fresh kali vm. How
 GMT+2 Time Zone
 Removed CLI window transparancy
 Remove CLI password prompt (login password still remains)
+Disable Neo4j login prompt
 Unzip Rockyou.txt
 ```
 
