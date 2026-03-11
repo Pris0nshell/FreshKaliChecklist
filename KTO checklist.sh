@@ -52,4 +52,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt upgrade -yq
 sudo DEBIAN_FRONTEND=noninteractive apt autoremove -yq
 sudo DEBIAN_FRONTEND=noninteractive apt install -y neo4j
 sed -i 's/^#dbms.security.auth_enabled=false/dbms.security.auth_enabled=false/' /etc/neo4j/neo4j.conf
+sudo mkdir -p /home/kali/.config/bloodhound
+chmod 777 /home/kali/.config/bloodhound
 sudo cp /home/kali/Desktop/Tools/BloodhoundCustomQueries/customqueries.json /home/kali/.config/bloodhound/customqueries.json
+
