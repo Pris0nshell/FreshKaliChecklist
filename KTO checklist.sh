@@ -37,6 +37,7 @@ wget https://github.com/ParrotSec/mimikatz/blob/master/x64/mimikatz.exe
 wget https://raw.githubusercontent.com/ivan-sincek/php-reverse-shell/refs/heads/master/src/reverse/php_reverse_shell.php
 cd /home/kali/Desktop/Tools/BloodHound-linux-x64/
 ./BloodHound --no-sandbox
+cp /home/kali/Desktop/Tools/BloodhoundCustomQueries/customqueries.json /home/kali/.config/bloodhound/customqueries.json
 cd ~/.local/bin
 wget https://raw.githubusercontent.com/dirkjanm/PKINITtools/refs/heads/master/gettgtpkinit.py
 chmod +x gettgtpkinit.py
@@ -52,3 +53,4 @@ sudo DEBIAN_FRONTEND=noninteractive apt update -y
 sudo DEBIAN_FRONTEND=noninteractive apt upgrade -yq
 sudo DEBIAN_FRONTEND=noninteractive apt autoremove -yq
 sudo DEBIAN_FRONTEND=noninteractive apt install -y neo4j
+sed -i 's/^#dbms.security.auth_enabled=false/dbms.security.auth_enabled=false/' /etc/neo4j/neo4j.conf
