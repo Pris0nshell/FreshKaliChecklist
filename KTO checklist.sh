@@ -38,7 +38,7 @@ wget https://raw.githubusercontent.com/ivan-sincek/php-reverse-shell/refs/heads/
 cd /home/kali/Desktop/Tools/BloodHound-linux-x64/
 timeout 3 ./BloodHound --no-sandbox
 cd ..
-cp /home/kali/Desktop/Tools/BloodhoundCustomQueries/customqueries.json /home/kali/.config/bloodhound/customqueries.json
+sudo cp /home/kali/Desktop/Tools/BloodhoundCustomQueries/customqueries.json /home/kali/.config/bloodhound/customqueries.json
 cd ~/.local/bin
 wget https://raw.githubusercontent.com/dirkjanm/PKINITtools/refs/heads/master/gettgtpkinit.py
 chmod +x gettgtpkinit.py
