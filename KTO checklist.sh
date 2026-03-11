@@ -6,6 +6,7 @@ xfconf-query -c xfwm4 -p /general/use_compositing -n -t bool -s false
 xfconf-query -c xfwm4 -p /general/use_compositing -s false && xfwm4 --replace &
 pipx install --force git+https://github.com/Pris0nshell/impacket.git
 echo "kali ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/kali
+gunzip /usr/share/wordlists/rockyou.txt.gz
 sudo timedatectl set-timezone Africa/Johannesburg
 mkdir /home/kali/Desktop/Tools/
 chmod 777 /home/kali/Desktop/Tools/
