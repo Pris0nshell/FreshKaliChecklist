@@ -15,7 +15,7 @@ curl -L -o nessus.deb \
 "https://www.tenable.com/downloads/api/v2/pages/nessus/files/Nessus-latest-debian10_amd64.deb"
 sudo dpkg -i nessus.deb
 git clone https://github.com/Pris0nshell/airgeddon.git
-https://github.com/Pris0nshell/BloodhoundCustomQueries.git
+git clone https://github.com/Pris0nshell/BloodhoundCustomQueries.git
 wget https://github.com/SpecterOps/BloodHound-Legacy/releases/download/v4.3.1/BloodHound-linux-x64.zip
 unzip BloodHound-linux-x64.zip
 git clone https://github.com/Pris0nshell/adPEAS.git
@@ -39,7 +39,6 @@ cd /home/kali/Desktop/Tools/BloodHound-linux-x64/
 ./BloodHound --no-sandbox
 pkill BloodHound
 cd ..
-git clone https://github.com/Pris0nshell/BloodhoundCustomQueries.git
 cp /home/kali/Desktop/Tools/BloodhoundCustomQueries/customqueries.json /home/kali/.config/bloodhound/customqueries.json
 cd ~/.local/bin
 wget https://raw.githubusercontent.com/dirkjanm/PKINITtools/refs/heads/master/gettgtpkinit.py
