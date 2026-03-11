@@ -35,6 +35,8 @@ rm -rf LICENSE
 wget https://github.com/r3motecontrol/Ghostpack-CompiledBinaries/raw/refs/heads/master/Rubeus.exe
 wget https://github.com/ParrotSec/mimikatz/blob/master/x64/mimikatz.exe
 wget https://raw.githubusercontent.com/ivan-sincek/php-reverse-shell/refs/heads/master/src/reverse/php_reverse_shell.php
+cd /home/kali/Desktop/Tools/BloodHound-linux-x64/
+./BloodHound --no-sandbox
 cd ~/.local/bin
 wget https://raw.githubusercontent.com/dirkjanm/PKINITtools/refs/heads/master/gettgtpkinit.py
 chmod +x gettgtpkinit.py
