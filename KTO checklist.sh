@@ -15,6 +15,7 @@ curl -L -o nessus.deb \
 "https://www.tenable.com/downloads/api/v2/pages/nessus/files/Nessus-latest-debian10_amd64.deb"
 sudo dpkg -i nessus.deb
 git clone https://github.com/Pris0nshell/airgeddon.git
+https://github.com/Pris0nshell/BloodhoundCustomQueries.git
 wget https://github.com/SpecterOps/BloodHound-Legacy/releases/download/v4.3.1/BloodHound-linux-x64.zip
 unzip BloodHound-linux-x64.zip
 git clone https://github.com/Pris0nshell/adPEAS.git
