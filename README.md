@@ -7,6 +7,7 @@ Removed CLI window transparancy
 Remove CLI password prompt (login password still remains)
 Disable Neo4j login prompt
 Unzip Rockyou.txt
+Install Bloodhound custom queries
 ```
 
 **The following applications are installed/downloaded**
@@ -32,7 +33,7 @@ ADPeas
 Nessus
 FTPAnonChecker
 WordlistGenerator
-Bloodhound custom queries + install in BH
+Bloodhound custom queries
 ```
 
 To run this - git clone the repo, then run
