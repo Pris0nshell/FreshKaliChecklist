@@ -22,6 +22,7 @@ git clone https://github.com/Pris0nshell/PEASS.git
 git clone https://github.com/Pris0nshell/WordlistGenerator.git
 git clone https://github.com/danielmiessler/SecLists.git
 git clone https://github.com/Pris0nshell/FTPAnonChecker.git
+git clone https://github.com/Pris0nshell/SysInternals.git
 sudo apt install -y terminator
 git clone https://github.com/dirkjanm/mitm6.git
 wget https://github.com/int0x33/nc.exe/raw/refs/heads/master/nc64.exe
@@ -47,6 +48,7 @@ wget https://raw.githubusercontent.com/ShutdownRepo/pywhisker/refs/heads/main/py
 chmod +x pywhisker.py
 wget https://raw.githubusercontent.com/ShutdownRepo/targetedKerberoast/refs/heads/main/targetedKerberoast.py
 chmod +x targetedKerberoast.py
+pipx install minidump minikerberos aiowinreg msldap winacl
 sudo DEBIAN_FRONTEND=noninteractive apt update -y
 sudo DEBIAN_FRONTEND=noninteractive apt upgrade -yq
 sudo DEBIAN_FRONTEND=noninteractive apt autoremove -yq
