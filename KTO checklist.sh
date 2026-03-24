@@ -23,6 +23,7 @@ git clone https://github.com/Pris0nshell/WordlistGenerator.git
 git clone https://github.com/danielmiessler/SecLists.git
 git clone https://github.com/Pris0nshell/FTPAnonChecker.git
 git clone https://github.com/Pris0nshell/SysInternals.git
+git clone https://github.com/Pris0nshell/SMBKiller.git
 sudo apt install -y terminator
 git clone https://github.com/dirkjanm/mitm6.git
 wget https://github.com/int0x33/nc.exe/raw/refs/heads/master/nc64.exe
