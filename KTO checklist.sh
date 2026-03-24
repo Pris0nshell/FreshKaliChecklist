@@ -66,5 +66,9 @@ chmod 777 /home/kali/Desktop/Tools/subfinder/
 cd subfinder
 unzip subfinder.zip
 mv /home/kali/Desktop/Tools/subfinder/subfinder /usr/local/bin/
+go install github.com/projectdiscovery/httpx/cmd/httpx@latest
+export PATH=$PATH:$(go env GOPATH)/bin
+rm -f /usr/bin/httpx
+rm -f /bin/httpx
 go install github.com/tomnomnom/httprobe@latest 
 
