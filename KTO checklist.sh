@@ -60,4 +60,11 @@ sed -i 's/^#dbms.security.auth_enabled=false/dbms.security.auth_enabled=false/' 
 sudo mkdir -p /home/kali/.config/bloodhound
 chmod 777 /home/kali/.config/bloodhound
 sudo cp /home/kali/Desktop/Tools/BloodhoundCustomQueries/customqueries.json /home/kali/.config/bloodhound/customqueries.json
+sudo apt install golang -y
+git clone https://github.com/Pris0nshell/subfinder.git
+chmod 777 /home/kali/Desktop/Tools/subfinder/
+cd subfinder
+unzip subfinder.zip
+mv /home/kali/Desktop/Tools/subfinder/subfinder /usr/local/bin/
+go install github.com/tomnomnom/httprobe@latest 
 
