@@ -24,10 +24,12 @@ git clone https://github.com/danielmiessler/SecLists.git
 git clone https://github.com/Pris0nshell/FTPAnonChecker.git
 git clone https://github.com/Pris0nshell/SysInternals.git
 git clone https://github.com/Pris0nshell/SMB_Killer.git
-sudo apt install -y terminator
 git clone https://github.com/dirkjanm/mitm6.git
+git clone https://github.com/Pris0nshell/PowerSploit.git
+git clone https://github.com/Pris0nshell/Inveigh.git
 wget https://github.com/int0x33/nc.exe/raw/refs/heads/master/nc64.exe
 git clone https://github.com/Pris0nshell/Ligolo.git
+cd Ligolo
 tar -xvf ligolo-ng_proxy_0.8.3_linux_amd64.tar.gz
 rm -rf LICENSE
 unzip -o ligolo-ng_agent_0.8.3_windows_amd64.zip
