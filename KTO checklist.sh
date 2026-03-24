@@ -2,7 +2,7 @@
 sudo rm -f /usr/share/keyrings/neo4j-archive-keyring.gpg
 wget -q -O - https://debian.neo4j.com/neotechnology.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/neo4j-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/neo4j-archive-keyring.gpg] https://debian.neo4j.com stable 4.5" | sudo tee /etc/apt/sources.list.d/neo4j.list
-xfconf-query -c xfwm4 -p /general/use_compositing -n -t bool -s false 2>/dev/null || xfconf-query -c xfwm4 -p /general/use_compositing -s false; xfwm4 --replace >/dev/null 2>&1 &
+sudo sh -c 'echo "xfwm4 --compositor=off --replace >/dev/null 2>&1 &" > /etc/profile.d/disable-compositing.sh'
 pipx install --force git+https://github.com/Pris0nshell/impacket.git
 echo "kali ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/kali
 gunzip /usr/share/wordlists/rockyou.txt.gz
