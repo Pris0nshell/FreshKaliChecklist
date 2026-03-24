@@ -23,15 +23,14 @@ git clone https://github.com/Pris0nshell/WordlistGenerator.git
 git clone https://github.com/danielmiessler/SecLists.git
 git clone https://github.com/Pris0nshell/FTPAnonChecker.git
 git clone https://github.com/Pris0nshell/SysInternals.git
-git clone https://github.com/Pris0nshell/SMBKiller.git
+git clone https://github.com/Pris0nshell/SMB_Killer.git
 sudo apt install -y terminator
 git clone https://github.com/dirkjanm/mitm6.git
 wget https://github.com/int0x33/nc.exe/raw/refs/heads/master/nc64.exe
-wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8.2/ligolo-ng_proxy_0.8.2_linux_amd64.tar.gz
-wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8.2/ligolo-ng_agent_0.8.2_windows_amd64.zip
-tar -xvf ligolo-ng_proxy_0.8.2_linux_amd64.tar.gz
+git clone https://github.com/Pris0nshell/Ligolo.git
+tar -xvf ligolo-ng_proxy_0.8.3_linux_amd64.tar.gz
 rm -rf LICENSE
-unzip -o ligolo-ng_agent_0.8.2_windows_amd64.zip
+unzip -o ligolo-ng_agent_0.8.3_windows_amd64.zip
 rm -rf LICENSE
 wget https://github.com/r3motecontrol/Ghostpack-CompiledBinaries/raw/refs/heads/master/Rubeus.exe
 wget https://github.com/ParrotSec/mimikatz/blob/master/x64/mimikatz.exe
