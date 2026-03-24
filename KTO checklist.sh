@@ -34,6 +34,7 @@ tar -xvf ligolo-ng_proxy_0.8.3_linux_amd64.tar.gz
 rm -rf LICENSE
 unzip -o ligolo-ng_agent_0.8.3_windows_amd64.zip
 rm -rf LICENSE
+cd ..
 wget https://github.com/r3motecontrol/Ghostpack-CompiledBinaries/raw/refs/heads/master/Rubeus.exe
 wget https://github.com/ParrotSec/mimikatz/blob/master/x64/mimikatz.exe
 wget https://raw.githubusercontent.com/ivan-sincek/php-reverse-shell/refs/heads/master/src/reverse/php_reverse_shell.php
