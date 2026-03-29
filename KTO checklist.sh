@@ -74,3 +74,7 @@ rm -f /bin/httpx
 sudo apt install golang -y
 go install github.com/tomnomnom/httprobe@latest 
 export PATH=$PATH:/root/go/bin
+cd /home/kali/Desktop/Tools
+wget https://github.com/michenriksen/aquatone/releases/download/v1.7.0/aquatone_linux_amd64_1.7.0.zip
+unzip aquatone_linux_amd64_1.7.0.zip 
+sudo mv aquatone /usr/local/bin/
