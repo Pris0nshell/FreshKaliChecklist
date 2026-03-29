@@ -65,6 +65,7 @@ git clone https://github.com/Pris0nshell/subfinder.git
 chmod 777 /home/kali/Desktop/Tools/subfinder/
 cd subfinder
 unzip subfinder.zip
+chmod 777 subfinder
 mv /home/kali/Desktop/Tools/subfinder/subfinder /usr/local/bin/
 go install github.com/projectdiscovery/httpx/cmd/httpx@latest
 export PATH=$PATH:$(go env GOPATH)/bin
