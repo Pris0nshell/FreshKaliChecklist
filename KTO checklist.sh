@@ -70,5 +70,5 @@ go install github.com/projectdiscovery/httpx/cmd/httpx@latest
 export PATH=$PATH:$(go env GOPATH)/bin
 rm -f /usr/bin/httpx
 rm -f /bin/httpx
+sudo apt install golang -y
 go install github.com/tomnomnom/httprobe@latest 
-
