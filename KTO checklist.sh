@@ -19,6 +19,8 @@ wget https://github.com/SpecterOps/BloodHound-Legacy/releases/download/v4.3.1/Bl
 unzip BloodHound-linux-x64.zip
 git clone https://github.com/Pris0nshell/adPEAS.git
 git clone https://github.com/Pris0nshell/PEASS.git
+git clone https://github.com/Pris0nshell/PetitPotam.git
+git clone https://github.com/Pris0nshell/GodPotato.git
 git clone https://github.com/Pris0nshell/WordlistGenerator.git
 git clone https://github.com/danielmiessler/SecLists.git
 git clone https://github.com/Pris0nshell/FTPAnonChecker.git
