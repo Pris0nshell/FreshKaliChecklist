@@ -29,16 +29,22 @@ pywhisker.py
 targetedKerberoast.py
 WinPeas
 LinPeas
+SMBKiller
+PowerSploit
 ADPeas
 Nessus
 FTPAnonChecker
+GodPotato
+PetitPotam
+Inveigh.exe
 WordlistGenerator
+SecLists
 Bloodhound custom queries
 ```
 
 To run this - git clone the repo, then run
 ```
-bash KTO\ checklist.sh
+bash TKO.sh
 ```
 
 
