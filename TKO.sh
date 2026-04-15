@@ -26,6 +26,7 @@ git clone https://github.com/Pris0nshell/PetitPotam.git
 git clone https://github.com/Pris0nshell/GodPotato.git
 git clone https://github.com/Pris0nshell/WordlistGenerator.git
 git clone https://github.com/danielmiessler/SecLists.git
+mv /home/kali/Desktop/Tools/SecLists /usr/share/wordlists
 git clone https://github.com/Pris0nshell/FTPAnonChecker.git
 git clone https://github.com/Pris0nshell/SysInternals.git
 git clone https://github.com/Pris0nshell/SMB_Killer.git
