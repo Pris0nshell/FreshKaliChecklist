@@ -78,6 +78,7 @@ mv /home/kali/Desktop/Tools/subfinder/subfinder /usr/local/bin/
 go install github.com/projectdiscovery/httpx/cmd/httpx@latest
 export PATH=$PATH:$(go env GOPATH)/bin
 sudo apt install golang -y
+pip install bloodyAD
 go install github.com/tomnomnom/httprobe@latest 
 export PATH=$PATH:/root/go/bin
 cd /home/kali/Desktop/Tools
