@@ -86,5 +86,6 @@ wget https://github.com/michenriksen/aquatone/releases/download/v1.7.0/aquatone_
 unzip aquatone_linux_amd64_1.7.0.zip 
 sudo mv aquatone /usr/local/bin/
 updatedb
+cd /home/kali
 wget https://raw.githubusercontent.com/Pris0nshell/FreshKaliChecklist/main/kali.png
 sudo -u kali DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus" xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorVirtual-1/workspace0/last-image -s /home/kali/kali.png
