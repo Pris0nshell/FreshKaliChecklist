@@ -87,5 +87,28 @@ unzip aquatone_linux_amd64_1.7.0.zip
 sudo mv aquatone /usr/local/bin/
 updatedb
 cd /home/kali
-wget https://raw.githubusercontent.com/Pris0nshell/FreshKaliChecklist/main/kali.png
-sudo -u kali DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus" xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorVirtual-1/workspace0/last-image -s /home/kali/kali.png
+cd /home/kali
+wget -O /home/kali/kali.png https://raw.githubusercontent.com/Pris0nshell/FreshKaliChecklist/main/kali.png
+chown kali:kali /home/kali/kali.png
+
+# --- Set wallpaper on every monitor + workspace (root drops to kali's session) ---
+IMG="/home/kali/kali.png"
+KALI_UID="$(id -u kali)"
+BUS="unix:path=/run/user/${KALI_UID}/bus"
+xq() { sudo -u kali DBUS_SESSION_BUS_ADDRESS="$BUS" xfconf-query "$@"; }
+# Detect the real monitor name(s); fall back to monitorVirtual-1 if none exist yet
+monitors="$(xq -c xfce4-desktop -l 2>/dev/null | grep -oE '/backdrop/screen0/monitor[^/]+' | sort -u)"
+[ -z "$monitors" ] && monitors="/backdrop/screen0/monitorVirtual-1"
+for mon in $monitors; do
+    for ws in 0 1 2 3; do
+        xq -c xfce4-desktop -p "${mon}/workspace${ws}/last-image"  -n -t string -s "$IMG" 2>/dev/null
+        xq -c xfce4-desktop -p "${mon}/workspace${ws}/last-image"  -s "$IMG"
+        xq -c xfce4-desktop -p "${mon}/workspace${ws}/image-style" -n -t int -s 5 2>/dev/null
+        xq -c xfce4-desktop -p "${mon}/workspace${ws}/image-style" -s 5
+    done
+done
+# Catch any oddly-named existing backdrop props too
+xq -c xfce4-desktop -l 2>/dev/null | grep -E '/last-image$' | while read -r prop; do
+    xq -c xfce4-desktop -p "$prop" -s "$IMG"
+done
+sudo -u kali DBUS_SESSION_BUS_ADDRESS="$BUS" xfdesktop --reload 2>/dev/null &
